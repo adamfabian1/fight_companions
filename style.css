@@ -1,3 +1,37 @@
-.main, .page-wrapper{width:100%;background:black;}
-.main-content{background: white;max-width:1200px;margin:0 auto;padding:20px;}
-.page-title{margin:0; padding:0;}
+body{
+	background-color: #000;
+}
+.main{
+	width:100%;
+	background-image: url(img/punch-logo.png);
+    background-size: 1280px;
+    background-repeat: no-repeat;
+	background-position: center;
+	background-position-y: inherit;
+}
+.main, .page-wrapper{
+}
+.main-content{
+	height: 100%; 
+	margin:0 auto;
+	padding:20px;
+}
+.page-title{
+	margin:0; 
+	padding:0;
+}
+.header{
+	background: rgba(48, 48, 48, 0.75);
+}
+.header-left{
+	color: red;
+	display: inline-block;
+}
+.header-center{
+	color: red;
+	display: inline-block;
+}
+.header-right{
+	color: red;
+	display: inline-block;
+}
