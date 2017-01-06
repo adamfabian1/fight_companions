@@ -1,0 +1,68 @@
+/** Global CSS **/
+body{
+    background-color:#000000;
+    color:white;
+    font-family: 'Anton',sans-serif;
+    margin:0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight:bold;
+}
+a{
+    text-decoration:none;
+    color:#FF0000;
+}
+a:hover{
+    text-decoration:none;
+    color:#FFFFFF;
+}
+a:visited{
+    text-decoration: none;
+    color:#A9A9A9;
+}
+/** Header CSS **/
+.header{
+    width:100%;
+}
+.header:after, .header-wrapper:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.header:after{
+    clear:both;
+}
+.header-wrapper{
+    border-bottom:1px solid #FF0000;
+    max-width:1300px;
+    margin:0 auto;
+    padding-bottom:10px;
+}
+.header-section{
+    width:33%;
+    float:left;
+    height:200px;
+    line-height:200px;
+    text-align:center;
+}
+.header-upper{
+    text-align:right;
+}
+.header-links{
+    margin:0;
+    padding:5px 0;
+    list-style-type:none;
+}
+.header-links-item{
+    display:inline;
+}
+#main-logo{
+    max-width:200px;
+}
+
+/** Main Content Section CSS **/
+
+
+/** Footer CSS **/
+
+

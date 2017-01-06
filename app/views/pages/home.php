@@ -1,1 +1,1 @@
-This is the home page.
+<body class="fight-companions fight-companions-home">
