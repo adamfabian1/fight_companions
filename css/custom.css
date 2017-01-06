@@ -20,6 +20,10 @@ a:visited{
     text-decoration: none;
     color:#A9A9A9;
 }
+.page-title{
+    margin:10px 0;
+    padding:15px 0;
+}
 /** Header CSS **/
 .header{
     width:100%;
@@ -42,7 +46,6 @@ a:visited{
     width:33%;
     float:left;
     height:200px;
-    line-height:200px;
     text-align:center;
 }
 .header-upper{
@@ -61,7 +64,13 @@ a:visited{
 }
 
 /** Main Content Section CSS **/
-
+.main{
+    width:100%;
+}
+.main-wrapper{
+    max-width:1300px;
+    margin:0 auto;
+}
 
 /** Footer CSS **/
 

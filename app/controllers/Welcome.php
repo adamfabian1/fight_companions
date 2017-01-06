@@ -1,9 +1,15 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Welcome extends My_Controller {
 
-	/**
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->helper('url_helper');
+    }
+
+    /**
 	 * Index Page for this controller.
 	 *
 	 * Maps to the following URL
@@ -20,6 +26,8 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
-	}
+        $this->content = 'home'; // passing middle to function. change this for different views.
+        $this->layout();
+        $this->data['page-title'] = 'Welcome Home';
+    }
 }
