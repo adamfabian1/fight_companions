@@ -25,6 +25,9 @@ a:visited{
     padding:15px 0;
 }
 /** Header CSS **/
+.social-icon{
+    width:32px;
+}
 .header{
     width:100%;
 }
@@ -42,6 +45,9 @@ a:visited{
     margin:0 auto;
     padding-bottom:10px;
 }
+.header-upper{
+    height:32px;
+}
 .header-section{
     width:33%;
     float:left;
@@ -52,17 +58,21 @@ a:visited{
     text-align:right;
 }
 .header-links{
+    width:96px;
+    float:right;
     margin:0;
-    padding:5px 0;
     list-style-type:none;
 }
 .header-links-item{
     display:inline;
+    float:left;
 }
 #main-logo{
     max-width:200px;
 }
-
+.header-lower:after{
+    clear:both;
+}
 /** Main Content Section CSS **/
 .main{
     width:100%;
@@ -70,6 +80,28 @@ a:visited{
 .main-wrapper{
     max-width:1300px;
     margin:0 auto;
+}
+.nav{
+    width:100%;
+    float:left;
+    padding-top:10px;
+    border-top:1px solid red;
+}
+.nav-links{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+.header-parent{
+    float:left;
+    text-align:center;
+}
+.header-parent a{
+    font-weight:600;
+    color:white;
+}
+.header-parent a:hover{
+    color:red;
 }
 
 /** Footer CSS **/

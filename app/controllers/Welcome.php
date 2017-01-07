@@ -7,6 +7,7 @@ class Welcome extends My_Controller {
     {
         parent::__construct();
         $this->load->helper('url_helper');
+        $this->load->helper('html_helper');
     }
 
     /**

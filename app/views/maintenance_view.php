@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Fight Companions Maintenance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <style>
         body{
             background:black;
@@ -12,6 +13,7 @@
         .maintenance-content{
             border-top:1px solid red;
             border-bottom: 1px solid red;
+            margin:0 auto;
         }
         @media only screen and (min-width:769px){
             .maintenance-content{
@@ -25,6 +27,7 @@
         @media only screen and (max-width:768px){
             .maintenance-content{
                 padding:10px;
+                max-width:350px;
             }
             .maintenance-logo img{
                 max-width:200px;
