@@ -49,8 +49,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
+
+
 //$route['news/create'] = 'news/create';
 //$route['news/(:any)'] = 'news/view/$1';
 $route['my_controller'] = 'my_controller';
 //$route['(:any)'] = 'pages/view/$1';
 $route['default_controller'] = 'welcome';
+
+if(!in_array($_SERVER['REMOTE_ADDR'], $this->config->item('maintenance_ips')) && $this->config->item('maintenance_mode')) {
+    $route['default_controller'] = "welcome/maintenance";
+    $route['(:any)'] = "welcome/maintenance";
+}

@@ -23,6 +23,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+$config['maintenance_mode'] = TRUE;
+$config['maintenance_ips'] = array('', '68.110.96.145');
+
+
 $config['base_url'] = 'http://www.fightcompanions.com/';
 
 /*

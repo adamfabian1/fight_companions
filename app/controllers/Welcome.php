@@ -30,4 +30,9 @@ class Welcome extends My_Controller {
         $this->layout();
         $this->data['page-title'] = 'Welcome Home';
     }
+
+    function maintenance() {
+        $this->output->set_status_header('503');
+        $this->load->view('maintenance_view');
+    }
 }
