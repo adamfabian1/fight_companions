@@ -3,6 +3,15 @@
 class MY_Controller extends CI_Controller{
     var $template = array();
     var $data = array();
+    var $title = '#NEWBlood';
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->helper('url_helper');
+        $this->load->helper('html_helper');
+        $this->data['title'] = $this->title;
+    }
 
     public function layout(){
         $this->template['pageopen'] = $this->load->view('layout/pageopen', $this->data, true);

@@ -6,13 +6,13 @@
  * Time: 9:45 PM
  */
 
-class News extends MY_Controller {
+class Episodes extends MY_Controller {
 
-    var $title = 'MMA News';
+    var $title = 'Podcast Episodes';
 
     public function index(){
         parent::__construct();
-        $this->content = 'pages/news'; // passing middle to function. change this for different views.
+        $this->content = 'pages/episodes'; // passing middle to function. change this for different views.
         $this->layout();
     }
 }

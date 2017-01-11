@@ -5,11 +5,27 @@ $youtubeImage = img('../media/images/youtube-icon.png', false, array('class' => 
 ?>
 <div class="header">
     <div class="header-wrapper">
-        <div class="header-upper">
+        <!--<div class="header-upper">
             <ul class="header-links">
-                <li class="header-links-item"><?php echo anchor('http://www.facebook.com', $facebookImage, array('class' => 'facebook-social', 'target'=>"_blank")); ?></li>
-                <li class="header-links-item"><?php echo anchor('http://www.twitter.com', $twitterImage, array('class' => 'twitter-social', 'target'=>"_blank")); ?></li>
-                <li class="header-links-item"><?php echo anchor('http://www.youtube.com/tektres', $youtubeImage, array('class' => 'youtube-social', 'target'=>"_blank")); ?></li>
+                <li class="header-links-item"><?php /*echo anchor('http://www.facebook.com', $facebookImage, array('class' => 'facebook-social', 'target'=>"_blank")); */?></li>
+                <li class="header-links-item"><?php /*echo anchor('http://www.twitter.com', $twitterImage, array('class' => 'twitter-social', 'target'=>"_blank")); */?></li>
+                <li class="header-links-item"><?php /*echo anchor('http://www.youtube.com/tektres', $youtubeImage, array('class' => 'youtube-social', 'target'=>"_blank")); */?></li>
+            </ul>
+        </div>-->
+        <div class="nav">
+            <ul class="nav-links">
+                <li class="header-parent level0">
+                    <a href="<?php echo site_url('video'); ?>"><span class="span-level0">Video</span></a>
+                </li>
+                <li class="header-parent level0">
+                    <a href="<?php echo site_url('episodes'); ?>"><span class="span-level0">Episodes</span></a>
+                </li>
+                <li class="header-parent level0">
+                    <a href="<?php echo site_url('merch'); ?>"><span class="span-level0">Store</span></a>
+                </li>
+                <li class="header-parent level0">
+                    <a href="<?php echo site_url('news'); ?>"><span class="span-level0">MMA News</span></a>
+                </li>
             </ul>
         </div>
         <div class="header-lower">
@@ -17,27 +33,13 @@ $youtubeImage = img('../media/images/youtube-icon.png', false, array('class' => 
                 <h3>Welcome to Fight Companions.com</h3>
             </div>
             <div class="header-section header-center">
-                <img id="main-logo" src="<?php echo base_url('media/images/punch-logo.png'); ?>"/>
+                <a href="<?php echo base_url() ?>">
+                    <img id="main-logo" src="<?php echo base_url('media/images/punch-logo.png'); ?>"/>
+                </a>
             </div>
             <div class="header-section header-right">
                 <h3>Bringing you the best in MMA Analysis.<br/>And drinking. Lots of Drinking.</h3>
             </div>
-        </div>
-        <div class="nav">
-            <ul class="nav-links">
-                <li class="header-parent level0">
-                    <a href="<?php echo site_url('news'); ?>"><span class="span-level0">Blog</span></a>
-                </li>
-                <li class="header-parent level0">
-                    <a href="<?php echo site_url('news'); ?>"><span class="span-level0">Schedule</span></a>
-                </li>
-                <li class="header-parent level0">
-                    <a href="<?php echo site_url('news'); ?>"><span class="span-level0">About</span></a>
-                </li>
-                <li class="header-parent level0">
-                    <a href="<?php echo site_url('news'); ?>"><span class="span-level0">#NEWBlood</span></a>
-                </li>
-            </ul>
         </div>
     </div>
 </div>
