@@ -1,0 +1,43 @@
+/* Responsive Styling Above Mobile */
+@media only screen and (min-width:769px){
+
+}
+/* Responsive Styling Mobile */
+@media only screen and (max-width:768px){
+    .header-left{
+        display:none;
+    }
+    #main-logo{
+        max-width:130px;
+    }
+    .header-section{
+        margin:10px;
+        height:auto;
+    }
+    .header-center{
+        width:40%;
+    }
+    .header-right{
+        width:48%;
+    }
+    .nav.sticky {
+        width:100%;
+    }
+    .copyright, .footer-menu{
+        text-align:center;
+        width:100%;
+    }
+    .footer-menu-item{
+        float:none;
+        padding:5px 0;
+        width:100%;
+    }
+    .copyright{
+        padding:5px 0;
+    }
+    .two-column-left.left, .two-column-left.right{
+        width:100%;
+        float:none;
+        text-align:center;
+    }
+}

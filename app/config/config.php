@@ -23,6 +23,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+$config['maintenance_mode'] = TRUE;
+$config['maintenance_ips'] = array('72.195.250.208', '70.162.204.251');
+
+
 $config['base_url'] = 'http://www.fightcompanions.com/';
 
 /*
@@ -35,7 +39,7 @@ $config['base_url'] = 'http://www.fightcompanions.com/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
