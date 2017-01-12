@@ -41,6 +41,7 @@ class Welcome extends My_Controller {
         $this->form_validation->set_rules('email', 'Email ID', 'trim|required|valid_email');
         if ($this->form_validation->run() == FALSE)
         {   //validation fails
+            $this->content='pages/home';
             $this->layout();
         }
         else
@@ -61,7 +62,7 @@ class Welcome extends My_Controller {
             {
                 // error
                 $this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Oops! Some Error.  Please try again later!!!</div>');
-                redirect('welcome/index');
+                redirect('/');
             }
         }
     }

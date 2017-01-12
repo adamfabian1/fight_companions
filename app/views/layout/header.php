@@ -4,14 +4,7 @@ $twitterImage = img('../media/images/twitter-icon.png', false, array('class' => 
 $youtubeImage = img('../media/images/youtube-icon.png', false, array('class' => 'social-icon'));
 ?>
 <div class="header">
-    <div class="header-wrapper">
-        <!--<div class="header-upper">
-            <ul class="header-links">
-                <li class="header-links-item"><?php /*echo anchor('http://www.facebook.com', $facebookImage, array('class' => 'facebook-social', 'target'=>"_blank")); */?></li>
-                <li class="header-links-item"><?php /*echo anchor('http://www.twitter.com', $twitterImage, array('class' => 'twitter-social', 'target'=>"_blank")); */?></li>
-                <li class="header-links-item"><?php /*echo anchor('http://www.youtube.com/tektres', $youtubeImage, array('class' => 'youtube-social', 'target'=>"_blank")); */?></li>
-            </ul>
-        </div>-->
+    <div class="nav-wrapper">
         <div class="nav">
             <ul class="nav-links">
                 <li class="header-parent level0">
@@ -28,6 +21,8 @@ $youtubeImage = img('../media/images/youtube-icon.png', false, array('class' => 
                 </li>
             </ul>
         </div>
+    </div>
+    <div class="header-wrapper">
         <div class="header-lower">
             <div class="header-section header-left">
                 <h3>Welcome to Fight Companions.com</h3>

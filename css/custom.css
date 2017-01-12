@@ -42,6 +42,19 @@ ul li{
     float:right;
     width:32%;
 }
+.outer-wrapper{
+    min-width:100%;
+    min-height:100%;
+    width:100%;
+    z-index:1;
+    background-image: url('../media/images/main-bg.jpg');
+    position:absolute;
+    background-size:cover;
+    background-position:center center;
+}
+
+
+
 /** Header CSS **/
 .social-icon{
     width:32px;
@@ -99,13 +112,16 @@ ul li{
     max-width:1300px;
     margin:0 auto;
 }
-.nav{
+.nav-wrapper{
     width:100%;
-    float:left;
+}
+.nav{
+    position:relative;
+    margin:0 auto;
+    max-width:1300px;
     padding:10px 0 10px 0;
     border-bottom:1px solid red;
     z-index:5;
-    background:black;
 }
 .header-parent{
     text-align:center;
