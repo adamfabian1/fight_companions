@@ -60,6 +60,7 @@ $route['episodes'] = 'episodes';
 $route['schedule'] = 'schedule';
 $route['merch'] = 'merch';
 $route['news'] = 'news';
+$route['unsubscribe'] = 'unsubscribe';
 $route['about'] = 'about';
 $route['my_controller'] = 'my_controller';
 $route['default_controller'] = 'welcome';

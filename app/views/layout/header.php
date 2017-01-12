@@ -13,6 +13,12 @@ $youtubeImage = img('../media/images/youtube-icon.png', false, array('class' => 
                 <li class="header-parent level0">
                     <a href="<?php echo site_url('episodes'); ?>"><span class="span-level0">Episodes</span></a>
                 </li>
+                <li>
+                    <a href="<?php echo base_url() ?>" ?>
+                        <img id="main-logo" src="<?php echo base_url('media/images/punch-logo.png'); ?>"/>
+                    </a>
+                </li>
+
                 <li class="header-parent level0">
                     <a href="<?php echo site_url('merch'); ?>"><span class="span-level0">Store</span></a>
                 </li>
@@ -22,19 +28,14 @@ $youtubeImage = img('../media/images/youtube-icon.png', false, array('class' => 
             </ul>
         </div>
     </div>
-    <div class="header-wrapper">
+    <!--<div class="header-wrapper">
         <div class="header-lower">
             <div class="header-section header-left">
                 <h3>Welcome to Fight Companions.com</h3>
-            </div>
-            <div class="header-section header-center">
-                <a href="<?php echo base_url() ?>">
-                    <img id="main-logo" src="<?php echo base_url('media/images/punch-logo.png'); ?>"/>
-                </a>
             </div>
             <div class="header-section header-right">
                 <h3>Bringing you the best in MMA Analysis.<br/>And drinking. Lots of Drinking.</h3>
             </div>
         </div>
-    </div>
+    </div>-->
 </div>

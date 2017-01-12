@@ -28,8 +28,8 @@ class Welcome extends My_Controller {
 	 */
 	public function index()
 	{
-        $this->content = 'pages/home'; // passing middle to function. change this for different views.
-        $this->contactForm();
+        $this->content = 'pages/home';
+        $this->layout();
     }
 
     function maintenance() {
@@ -40,29 +40,31 @@ class Welcome extends My_Controller {
     public function contactForm(){
         $this->form_validation->set_rules('email', 'Email ID', 'trim|required|valid_email');
         if ($this->form_validation->run() == FALSE)
-        {   //validation fails
-            $this->content='pages/home';
-            $this->layout();
+        {
+            echo validation_errors();
         }
         else
         {
-            //insert the contact form data into database
-            $data = array(
-                'subscribed' => true,
-                'subscriber_email' => $this->input->post('email')
-            );
-
-            if ($this->db->insert('email_subscribers', $data))
+            $sql = "SELECT * FROM email_subscribers WHERE subscriber_email = '".$this->input->post('email') ."'";
+            $query = $this->db->query($sql);
+            if(count($query->result()) >= 1)
             {
-                // success
-                $this->session->set_flashdata('msg','<div class="alert alert-success text-center">You\'ve stepped into the ring.</div>');
-                redirect('/');
+                echo 'you dumb fucker';
             }
-            else
-            {
-                // error
-                $this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Oops! Some Error.  Please try again later!!!</div>');
-                redirect('/');
+            else{
+                $data = array(
+                    'subscribed' => true,
+                    'subscriber_email' => $this->input->post('email')
+                );
+
+                if ($this->db->insert('email_subscribers', $data))
+                {
+                    echo 'not so dumb fucker';
+                }
+                else
+                {
+                    echo 'something fuuuuuuuuucked up';
+                }
             }
         }
     }
