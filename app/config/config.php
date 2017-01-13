@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['maintenance_mode'] = TRUE;
-$config['maintenance_ips'] = array('72.195.250.208', '70.162.204.251');
+$config['maintenance_ips'] = array('38.105.16.110','98.190.149.188','72.195.250.208', '70.162.204.251','192.31.242.195');
 
 
 $config['base_url'] = 'http://www.fightcompanions.com/';

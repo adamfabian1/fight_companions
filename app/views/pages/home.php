@@ -5,13 +5,13 @@
             <div class="std">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Contact Form</h3>
+                        <h3 class="panel-title">Subscribe to find out when Fight Companions Goes Live!</h3>
+                        <span class="panel-subtitle">Sign up with your email address to receive news and updates.</span>
                     </div>
                     <div class="panel-body">
                         <?php $attributes = array("name" => "contactform");
                         echo form_open();?>
                         <?php
-                        echo form_label('Email');
                         $dataEmail = array(
                             'name' => 'email',
                             'class' => 'input_box',

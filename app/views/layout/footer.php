@@ -4,9 +4,6 @@
     <div class="footer-wrapper">
         <ul class="footer-menu">
             <li class="footer-menu-item level0">
-                <a href="<?php echo site_url('about'); ?>"><span class="span-level0">About</span></a>
-            </li>
-            <li class="footer-menu-item level0">
                 <a href="<?php echo site_url('feedback'); ?>"><span class="span-level0">Feedback / Contact</span></a>
             </li>
         </ul>

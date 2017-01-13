@@ -91,10 +91,8 @@ input {
     clear:both;
 }
 .header-wrapper, .footer-wrapper{
-    /*border-bottom:1px solid #FF0000;*/
     max-width:1300px;
     margin:0 auto;
-    padding: 5px 0 10px;
 }
 .header-upper{
     height:32px;
@@ -125,6 +123,22 @@ input {
     clear:both;
 }
 /** Main Content Section CSS **/
+.panel{
+    padding:0 25%;
+    text-align:center;
+}
+.panel-heading{
+    margin-bottom:10px;
+}
+.panel-title{
+    font-size:20px;
+    margin-bottom:5px;
+}
+.panel-subtitle{
+    text-transform:lowercase;
+    font-weight:300;
+    font-size:14px;
+}
 .main{
     width:100%;
 }
@@ -138,18 +152,27 @@ input {
 .nav-wrapper{
     width:100%;
 	background-color: rgba(0, 0, 0, .65);
-	border-bottom: 2px solid red;
 }
 .nav{
     position:relative;
     margin:0 auto;
     max-width:1300px;
     padding:10px 0 25px 0;
-    /*border-bottom:1px solid red;*/
-    z-index:5;
 }
 .nav-links{
     text-align:center;
+}
+.nav-links li{
+    width:20%;
+}
+.nav-links li.active{
+    background:white;
+}
+.nav-links li.active a{
+    color:black;
+}
+.nav-links li.active a:hover{
+    color:red;
 }
 .nav-links li:nth-child(3){
     margin-top:-12px;
