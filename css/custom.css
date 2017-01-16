@@ -63,15 +63,37 @@ label {
 
 input {
 	background-color: #2b170e;
-    padding: 5px;
-    border-radius: 5px;
+    padding:15px;
+    border:1px solid white;
+    display:inline-block;
+}
+input, select, textarea{
+    font-family: 'Krona One', sans-serif;
+    color: white;
 }
 
+textarea:focus, input:focus {
+    color: white;
+}
+#form_button{
+    display:inline-block;
+}
 #form_button input {
 	background-color: #2b170e;
     color: white;
 }
-
+::-webkit-input-placeholder {
+    color: white;
+}
+:-moz-placeholder {
+    color: white;
+}
+::-moz-placeholder {
+    color: white;
+}
+:-ms-input-placeholder {
+    color: white;
+}
 /** Header CSS **/
 .social-icon{
     width:32px;
@@ -138,6 +160,19 @@ input {
     text-transform:lowercase;
     font-weight:300;
     font-size:14px;
+}
+#contactform-response{
+    padding:10px;
+    margin-top:10px;
+    border-radius:10px;
+}
+#contactform-response.success{
+    background:green;
+    border:2px solid lightgreen;
+}
+#contactform-response.error{
+    background:darkred;
+    border:2px solid red;
 }
 .main{
     width:100%;
@@ -213,6 +248,17 @@ input {
 }
 .copyright span{
     font-weight:400;
+}
+.footer input{
+    background:transparent;
+    padding:0;
+    border:none;
+    font-size: 9px;
+    cursor:pointer;
+    text-transform: uppercase;
+}
+.footer input:hover{
+    color:red;
 }
 .footer-menu-item{
     padding: 0 15px;

@@ -5,22 +5,22 @@
             <div class="std">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Subscribe to find out when Fight Companions Goes Live!</h3>
+                        <h3 class="panel-title">Subscribe to find out when Fight Companions Goes Live!!</h3>
                         <span class="panel-subtitle">Sign up with your email address to receive news and updates.</span>
                     </div>
                     <div class="panel-body">
-                        <?php $attributes = array("name" => "contactform");
-                        echo form_open();?>
+                        <?php $attributes = array("id" => "contactform");
+                        echo form_open('', $attributes);?>
                         <?php
                         $dataEmail = array(
                             'name' => 'email',
                             'class' => 'input_box',
-                            'placeholder' => 'Please Enter Email',
+                            'placeholder' => 'Email Address',
                             'id' => 'email'
                         );
                         echo form_input($dataEmail); ?>
                         <div id="form_button">
-                            <?php echo form_submit('submit', 'Submit', "class='submit'"); ?>
+                            <?php echo form_submit('submit', 'Sign Up', "class='submit'"); ?>
                         </div>
                         <?php echo form_close(); ?>
                         <div id="contactform-response" class="display:none">
@@ -35,25 +35,33 @@
 <script type="text/javascript">
     // Ajax post
     jQuery(document).ready(function() {
-        jQuery(".submit").click(function(event) {
+        jQuery("#contactform .submit").click(function(event) {
             event.preventDefault();
+            jQuery('#contactform-response').empty();
+            jQuery('#contactform-response').removeClass('error');
+            jQuery('#contactform-response').removeClass('success');
             var email = jQuery("input#email").val();
             jQuery.ajax({
                 type: "POST",
                 url: "<?php echo base_url(); ?>welcome/contactForm",
                 data: {email: email},
-                success: function(data) {
-                    if (data)
-                    {
-                        if(jQuery('#contactform-response p').length){
-                            jQuery('#contactform-response p').remove();
+                success: function (data) {
+                    try {
+                        if (data)
+                        {
+                            var obj = jQuery.parseJSON(data);
+                            jQuery('#contactform-response').append(obj['STATUS']);
+                            jQuery('#contactform-response').css('display','block');
+                            jQuery('#contactform-response').addClass(obj['CLASS']);
+                            jQuery('#contactform')[0].reset();
                         }
-                        jQuery('#contactform-response').append(data);
-                        jQuery('#contactform-response').css('display','block');
-                        setTimeout(function(){
-                            jQuery('#contactform-response').slideUp();
-                        }, 1500);
                     }
+                    catch (e) {
+                        alert('There was an error processing your request.');
+                    }
+                },
+                error: function () {
+                    alert('There was an error processing your request.');
                 }
             });
         });
