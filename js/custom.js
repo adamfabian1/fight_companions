@@ -1,4 +1,4 @@
-jQuery(document).ready(function(){
+/*jQuery(document).ready(function(){
     resizeMenu();
 });
 
@@ -10,7 +10,7 @@ function resizeMenu(){
     jQuery('.nav-links li').each(function(){
         jQuery(this).css('width', (jQuery(".nav").outerWidth()/jQuery('.nav-links li').length) -1);
     });
-}
+}*/
 
 jQuery(window).scroll(function() {
     if ($(this).scrollTop() > 1){

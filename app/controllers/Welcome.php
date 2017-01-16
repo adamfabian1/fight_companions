@@ -6,7 +6,7 @@ class Welcome extends My_Controller {
     public function __construct()
     {
         parent::__construct();
-        $this->load->helper(array('url_helper','html_helper', 'form'));
+        $this->load->helper(array('url_helper','html_helper', 'form','email_helper'));
         $this->load->library(array('session','form_validation'));
         $this->load->database();
     }
@@ -28,8 +28,8 @@ class Welcome extends My_Controller {
 	 */
 	public function index()
 	{
-        $this->content = 'pages/home'; // passing middle to function. change this for different views.
-        $this->contactForm();
+        $this->content = 'pages/home';
+        $this->layout();
     }
 
     function maintenance() {
@@ -38,37 +38,81 @@ class Welcome extends My_Controller {
     }
 
     public function contactForm(){
-        $this->form_validation->set_rules('email', 'Email ID', 'trim|required|valid_email');
+        $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
         if ($this->form_validation->run() == FALSE)
-        {   //validation fails
-            $this->content='pages/home';
-            $this->layout();
+        {
+            $return = array(
+                'STATUS' => validation_errors(),
+                'CLASS'  => 'error'
+            );
+            echo json_encode($return);
         }
         else
         {
-            //insert the contact form data into database
-            $data = array(
-                'subscribed' => true,
-                'subscriber_email' => $this->input->post('email')
-            );
-
-            if ($this->db->insert('email_subscribers', $data))
+            $sql = "SELECT * FROM email_subscribers WHERE subscriber_email = '".$this->input->post('email') ."'";
+            $query = $this->db->query($sql);
+            if(count($query->result()) >= 1)
             {
-                // success
-                $this->session->set_flashdata('msg','<div class="alert alert-success text-center">You\'ve stepped into the ring.</div>');
-                redirect('/');
+                $return = array(
+                    'STATUS' => 'You\'re already signed up.',
+                    'CLASS'  => 'error'
+                );
+                echo json_encode($return);
             }
-            else
-            {
-                // error
-                $this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Oops! Some Error.  Please try again later!!!</div>');
-                redirect('/');
+            else{
+                $data = array(
+                    'subscribed' => true,
+                    'subscriber_email' => $this->input->post('email')
+                );
+
+                if ($this->db->insert('email_subscribers', $data))
+                {
+                    $return = array(
+                        'STATUS' => 'Welcome to the fight.',
+                        'CLASS'  => 'success'
+                    );
+                    $this->sendSignupEmail($this->input->post('email'));
+                    echo json_encode($return);
+                }
+                else
+                {
+                    $return = array(
+                        'STATUS' => 'Database error.  Please contact info@fightcompanions.com.',
+                        'CLASS'  => 'error'
+                    );
+                    echo json_encode($return);
+                }
             }
         }
     }
 
+    public function feedbackForm(){
+        $this->form_validation->set_rules('twitter', 'Twitter', 'trim');
+        $this->form_validation->set_rules('facebook', 'Facebook', 'trim');
+        $this->form_validation->set_rules('instagram', 'Instagram', 'trim');
+        $this->form_validation->set_rules('firstname', 'First Name', 'trim|required|alpha_space_only');
+        $this->form_validation->set_rules('lastname', 'Last Name', 'trim|required|alpha_space_only');
+        $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+        $this->form_validation->set_rules('comment', 'Comment', 'trim|required');
+        if ($this->form_validation->run() == FALSE)
+        {
+            $return = array(
+                'STATUS' => validation_errors(),
+                'CLASS'  => 'error'
+            );
+            echo json_encode($return);
+        }
+        else
+        {
+            $return = array(
+                'STATUS' => 'Implementing soon',
+                'CLASS'  => 'success'
+            );
+        }
+    }
+
     //custom callback to accept only alphabets and space input
-    function alpha_space_only($str)
+    public function alpha_space_only($str)
     {
         if (!preg_match("/^[a-zA-Z ]+$/",$str))
         {
@@ -78,6 +122,85 @@ class Welcome extends My_Controller {
         else
         {
             return TRUE;
+        }
+    }
+
+    public function sendSignupEmail($email){
+        $emailConfig = [
+            'protocol' => 'smtp',
+            'smtp_host' => 'ssl://smtp.gmail.com',
+            'smtp_port' => 465,
+            'smtp_user' => 'info@fightcompanions.com',
+            'smtp_pass' => 'Chalupa5!',
+            'mailtype' => 'html',
+            'charset' => 'iso-8859-1'
+        ];
+
+        $from = [
+            'email' => 'info@fightcompanions.com',
+            'name' => "Fight Companions"
+        ];
+
+        $subject = 'Welcome to Fight Companions';
+        $message = 'Welcome to the fight.';
+        $to = array($email);
+        //  $message = 'Type your gmail message here'; // use this line to send text email.
+        // load view file called "welcome_message" in to a $message variable as a html string.
+        $this->load->library('email', $emailConfig);
+        // Sometimes you have to set the new line character for better result
+        $this->email->set_newline("\r\n");
+        // Set email preferences
+        $this->email->from($from['email'], $from['name']);
+        $this->email->to($to);
+        $this->email->subject($subject);
+        $this->email->message($message);
+        // Ready to send email and check whether the email was successfully sent
+        if (!$this->email->send()) {
+            // Raise error message
+            show_error($this->email->print_debugger());
+        } else {
+            // Show success notification or other things here
+//            echo 'Success to send email';
+        }
+    }
+
+    public function sendContactEmail($from, $firstName, $lastName){
+
+        $emailConfig = [
+            'protocol' => 'smtp',
+            'smtp_host' => 'ssl://smtp.gmail.com',
+            'smtp_port' => 465,
+            'smtp_user' => 'info@fightcompanions.com',
+            'smtp_pass' => 'Chalupa5!',
+            'mailtype' => 'html',
+            'charset' => 'iso-8859-1'
+        ];
+
+        $from = [
+            'email' => $from,
+            'name' => $firstName.' '.$lastName
+        ];
+
+        $subject = 'Feedback / Contact Form Submission';
+        $message = 'Welcome to the fight.';
+        $to = array('info@fightcompanions.com');
+        //  $message = 'Type your gmail message here'; // use this line to send text email.
+        // load view file called "welcome_message" in to a $message variable as a html string.
+        $this->load->library('email', $emailConfig);
+        // Sometimes you have to set the new line character for better result
+        $this->email->set_newline("\r\n");
+        // Set email preferences
+        $this->email->from($from['email'], $from['name']);
+        $this->email->to($to);
+        $this->email->subject($subject);
+        $this->email->message($message);
+        // Ready to send email and check whether the email was successfully sent
+        if (!$this->email->send()) {
+            // Raise error message
+            show_error($this->email->print_debugger());
+        } else {
+            // Show success notification or other things here
+//            echo 'Success to send email';
         }
     }
 }
