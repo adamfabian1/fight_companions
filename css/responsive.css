@@ -9,6 +9,30 @@
     #mobile-text{
         display:none;
     }
+    .feedback-top{
+        max-width:330px;
+    }
+    .feedback-top input{
+        width: 298px;
+    }
+    .feedback-name .input-box.firstname{
+        float:left;
+        width:50%;
+    }
+    .feedback-name .input-box.lastname{
+        float:right;
+        width:50%;
+    }
+    .feedback-email{
+        width:100%;
+        float:left;
+        clear:both;
+        text-align:center;
+    }
+    .feedback-email .input-box{
+        width:330px;
+        margin:0 auto;
+    }
 }
 /* Responsive Styling Mobile */
 @media only screen and (max-width:768px){
@@ -136,4 +160,18 @@
         float:none;
         text-align:center;
     }
+    .feedback-top,.feedback-name, feedback-content, .feedback-email,.feedback-comment{
+        max-width:300px;
+    }
+    .feedback-top input, .feedback-name input, .feedback-email input{
+        width:197px;
+    }
+    .feedback-comment textarea{
+        max-width:225px;
+    }
+    body.simplemodal-container{
+        padding:0;
+    }
+
+
 }

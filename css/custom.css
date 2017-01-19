@@ -161,16 +161,26 @@ textarea:focus, input:focus {
     font-weight:300;
     font-size:14px;
 }
-#contactform-response{
+body #simplemodal-container{
+    color:white;
+    background-color: black;
+}
+body #simplemodal-container .simplemodal-data{
+    padding:0;
+}
+#simplemodal-container .panel{
+    padding:0 10%;
+}
+#contactform-response. #feedbackform-response{
     padding:10px;
     margin-top:10px;
     border-radius:10px;
 }
-#contactform-response.success{
+#contactform-response.success, #feedbackform-response.success{
     background:green;
     border:2px solid lightgreen;
 }
-#contactform-response.error{
+#contactform-response.error, #feedbackform-response.error{
     background:darkred;
     border:2px solid red;
 }
@@ -269,8 +279,35 @@ textarea:focus, input:focus {
 .footer-menu-item a:hover{
     text-decoration:underline;
 }
-
 /** PAge Structures **/
 .content{
     width:100%;
+}
+/** Feedback form styling **/
+.feedback-top, .feedback-email, .feedback-comment, .feedback-name{
+    margin: 0 auto;
+}
+.feedback-top, .feedback-name, .feedback-email, .feedback-comment{
+    width:100%;
+    text-align:center;
+    padding-bottom:20px;
+}
+.feedback-name input, .feedback-email input, .feedback-comment input{
+    margin-bottom:20px;
+}
+#feedback-form .feedback-email, #feedback-form .feedback-comment{
+    padding-bottom:0;
+}
+.feedback-comment textarea{
+    color:black;
+    margin-bottom:20px;
+}
+.error-validation{
+    clear:both;
+    font-size:10px;
+    line-height:1em;
+    margin-top:-20px;
+    color:red;
+    padding-bottom:5px;
+    padding-top:5px;
 }
