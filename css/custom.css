@@ -350,3 +350,31 @@ ul.social-links-list li{
 .about-items li{
     float:none;
 }
+.fight-list{
+    text-align:center;
+}
+.fight-list h3{
+    font-size:20px;
+}
+.fight-card{
+    margin-bottom:30px;
+}
+#fight-headline{
+    font-size:30px;
+    width:100%;
+    text-align: center;
+    background:black;
+    color:red;
+    margin:0;
+}
+.fight-listing li{
+    float:none;
+    text-align:center;
+    padding:5px 0;
+}
+.fight-listing li:nth-child(odd){
+    background:black;
+}
+.fight-listing li:nth-child(even){
+    background:gray;
+}
