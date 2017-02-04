@@ -83,9 +83,6 @@ class Welcome extends My_Controller
 
     public function feedbackForm()
     {
-        $this->form_validation->set_rules('twitter', 'Twitter', 'trim');
-        $this->form_validation->set_rules('facebook', 'Facebook', 'trim');
-        $this->form_validation->set_rules('instagram', 'Instagram', 'trim');
         $this->form_validation->set_rules('firstname', 'First Name', 'trim|required');
         $this->form_validation->set_rules('lastname', 'Last Name', 'trim|required');
         $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
@@ -102,10 +99,7 @@ class Welcome extends My_Controller
                     $this->input->post('email'),
                     $this->input->post('firstname'),
                     $this->input->post('lastname'),
-                    $this->input->post('comment'),
-                    $this->input->post('twitter') ? $this->input->post('twitter') : '',
-                    $this->input->post('facebook') ? $this->input->post('facebook') : '',
-                    $this->input->post('instagram') ? $this->input->post('instagram') : ''
+                    $this->input->post('comment')
                 ) == true
             ) {
                 $return = array(

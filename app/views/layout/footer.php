@@ -1,13 +1,25 @@
 <?php
+$facebookImage = img('../media/images/facebook-logo.png', false, array('class' => 'social-icon'));
+$twitterImage = img('../media/images/twitter-logo.png', false, array('class' => 'social-icon'));
+$youtubeImage = img('../media/images/youtube-logo.png', false, array('class' => 'social-icon'));
+$instagramImage = img('../media/images/instagram-logo.png', false, array('class' => 'social-icon'));
 ?>
 <div class="footer">
     <div class="footer-wrapper">
-        <ul class="footer-menu">
+        <ul class="footer-menu footer-left">
             <li class="footer-menu-item level0">
                 <input type="button" name="contact" value="Feedback / Contact" class="feedback-contact"
             </li>
         </ul>
-        <div class="copyright">
+        <div class="social-links footer-center">
+            <ul class="social-links-list">
+                <li class="social-links-item"><?php echo anchor_popup('https://www.facebook.com/fcompanions', $facebookImage, array('class' => 'facebook-social', 'target'=>"_blank")); ?></li>
+                <li class="social-links-item"><?php echo anchor_popup('https://twitter.com/Fight_companion/', $twitterImage, array('class' => 'twitter-social')); ?></li>
+                <li class="social-links-item"><?php echo anchor_popup('http://www.youtube.com/tektres', $youtubeImage, array('class' => 'youtube-social')); ?></li>
+                <li class="social-links-item"><?php echo anchor_popup('https://www.instagram.com/fightcompanions/', $instagramImage, array('class' => 'youtube-social')); ?></li>
+            </ul>
+        </div>
+        <div class="copyright footer-right">
             <span>&copy;2016 FightCompanions.com</span>
         </div>
     </div>
@@ -22,46 +34,6 @@
             <?php $attributes = array("id" => 'feedbackform');
             echo form_open('', $attributes);
             ?>
-            <div class="feedback-top">
-                <?php
-                $dataTwitter = array(
-                    'name' => 'twitter',
-                    'class' => 'input_box',
-                    'placeholder' => '',
-                    'id' => 'twitter'
-                ); ?>
-                <div class="input-box">
-                    <?php
-                    echo form_label('Twitter Handle', 'twitter');
-                    echo form_input($dataTwitter);
-                    ?>
-                </div>
-                <?php
-                $dataFacebook = array(
-                    'name' => 'facebook',
-                    'class' => 'input_box',
-                    'placeholder' => '',
-                    'id' => 'facebook'
-                ); ?>
-                <div class="input-box">
-                    <?php
-                    echo form_label('Facebook Link', 'facebook');
-                    echo form_input($dataFacebook);
-                    ?>
-                </div>
-                <?php
-                $dataInstagram = array(
-                    'name' => 'instagram',
-                    'class' => 'input_box',
-                    'placeholder' => '',
-                    'id' => 'instagram'
-                ); ?>
-                <div class="input-box">
-                    <?php
-                    echo form_label('Instagram Link', 'instagram');
-                    echo form_input($dataInstagram); ?>
-                </div>
-            </div>
             <div class="feedback-name">
                 <?php $dataFirstname = array(
                     'name' => 'firstname',
@@ -158,9 +130,6 @@
             jQuery('#feedbackform-response').empty();
             jQuery('#feedbackform-response').removeClass('error');
             jQuery('#feedbackform-response').removeClass('success');
-            var twitter = jQuery("input#twitter").val();
-            var facebook = jQuery("input#facebook").val();
-            var instagram = jQuery("input#instagram").val();
             var firstname = jQuery("input#firstname").val();
             var lastname = jQuery("input#lastname").val();
             var email = jQuery("#feedbackform input#email").val();

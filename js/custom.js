@@ -1,11 +1,21 @@
-jQuery(window).scroll(function() {
-    if ($(this).scrollTop() > 1){
-        $('.nav').addClass("sticky");
-    }
-    else{
-        $('.nav').removeClass("sticky");
-    }
+// jQuery(window).scroll(function() {
+//     if ($(this).scrollTop() > 1){
+//         $('.nav').addClass("sticky");
+//     }
+//     else{
+//         $('.nav').removeClass("sticky");
+//     }
+// });
+
+jQuery(document).ready(function(){
+
 });
+
+jQuery(window).resize(function(){
+
+});
+
+
 
 function addModalClose(){
     jQuery('.simplemodal-container .simplemodal-close').click();
