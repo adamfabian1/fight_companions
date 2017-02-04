@@ -1,22 +1,37 @@
-/*jQuery(document).ready(function(){
-    resizeMenu();
+// jQuery(window).scroll(function() {
+//     if ($(this).scrollTop() > 1){
+//         $('.nav').addClass("sticky");
+//     }
+//     else{
+//         $('.nav').removeClass("sticky");
+//     }
+// });
+
+jQuery(document).ready(function(){
+
 });
 
 jQuery(window).resize(function(){
-    resizeMenu();
+
 });
 
-function resizeMenu(){
-    jQuery('.nav-links li').each(function(){
-        jQuery(this).css('width', (jQuery(".nav").outerWidth()/jQuery('.nav-links li').length) -1);
+
+
+function addModalClose(){
+    jQuery('.simplemodal-container .simplemodal-close').click();
+}
+
+function parseErrors(obj, formId){
+    Object.keys(obj).forEach(function(key){
+        errorObject = '<div class="error-validation">' + obj[key] + '</div>';
+        jQuery(errorObject).insertAfter('#' + formId + ' #' + key);
     });
-}*/
+    jQuery('.simplemodal-wrap').animate({ scrollTop: jQuery('.error-validation').first().offset().top }, 200)
+}
 
-jQuery(window).scroll(function() {
-    if ($(this).scrollTop() > 1){
-        $('.nav').addClass("sticky");
+function checkMobile(){
+    if(jQuery(window).width() <= 768){
+        return true;
     }
-    else{
-        $('.nav').removeClass("sticky");
-    }
-});
+    return false;
+}
