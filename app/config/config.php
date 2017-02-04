@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['maintenance_mode'] = TRUE;
+$config['maintenance_mode'] = FALSE;
 $config['maintenance_ips'] = array('70.162.58.211','192.31.242.196','38.105.16.110','98.190.149.188','72.195.250.208', '70.162.204.251','192.31.242.195');
 
 
