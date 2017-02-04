@@ -7,6 +7,9 @@
                     <h3 id="fight-headline">
                         <span>UFC FIGHT NIGHT: BERMUDEZ VS. KOREAN ZOMBIE<br/>February 4th, 2017</span>
                     </h3>
+<!--                    <div class="video-container">-->
+<!--                        <iframe width="853" height="480" src="https://www.youtube.com/embed/z9Ul9ccDOqE" frameborder="0" allowfullscreen="allowfullscreen"></iframe>-->
+<!--                    </div>-->
                     <div class="main-event fight-list">
                         <h3>MAIN CARD</h3>
                         <ul class="fight-listing">
