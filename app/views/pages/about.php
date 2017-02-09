@@ -33,7 +33,7 @@
                                 <h2>Hector</h2>
                                 <img id="about-logo" src="<?php echo base_url('media/images/hector-bio.png'); ?>"/>
                                 <div class="bio-content">
-                                    Hector is the man without a bio.
+                                    the man with the plan, hector is a long standing fan of combat sports. bringing a deep knowledge of all things fighting, you can expect him to keep the podcast on point with his photographic memory of mma facts… well not really. he may forget things as the show goes on and more drinks go down...
                                 </div>
                             </li>
                         </ul>

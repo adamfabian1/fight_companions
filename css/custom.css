@@ -51,7 +51,8 @@ ul li{
     width:100%;
     background-image: url('../media/images/main-bg.jpg');
     position:absolute;
-    background-size:cover;
+    background-size:100%;
+    background-attachment:fixed;
     background-position:center center;
 }
 .fight-companion-home .page-title{

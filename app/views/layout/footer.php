@@ -139,18 +139,14 @@ $instagramImage = img('../media/images/instagram-logo.png', false, array('class'
                 url: "<?php echo base_url(); ?>welcome/feedbackForm",
                 data: {
                     email: email,
-                    twitter: twitter,
-                    facebook: facebook,
                     firstname: firstname,
                     lastname: lastname,
-                    comment: comment,
-                    instagram: instagram
+                    comment: comment
                 },
                 success: function (data) {
                     try {
                         if (data) {
                             var obj = jQuery.parseJSON(data);
-                            console.log(obj);
                             if (obj['ERROR_ARRAY']) {
                                 parseErrors(obj['ERROR_ARRAY'], 'feedback-form');
                             }

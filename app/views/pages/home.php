@@ -5,31 +5,28 @@
             <div class="std">
                 <div class="fight-card">
                     <h3 id="fight-headline">
-                        <span>UFC FIGHT NIGHT: BERMUDEZ VS. KOREAN ZOMBIE<br/>February 4th, 2017</span>
+                        <span>UFC 208: HOLM VS. RADAMIE<br/>February 11th, 2017</span>
                     </h3>
-<!--                    <div class="video-container">-->
-<!--                        <iframe width="853" height="480" src="https://www.youtube.com/embed/z9Ul9ccDOqE" frameborder="0" allowfullscreen="allowfullscreen"></iframe>-->
-<!--                    </div>-->
+                    <div class="video-container">
+                        <iframe width="100%" src="https://www.youtube.com/embed/FhdoNyDVHUc" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                    </div>
                     <div class="main-event fight-list">
                         <h3>MAIN CARD</h3>
                         <ul class="fight-listing">
-                            <li><span class="fighters">Dennis Bermudez vs. Chan Sung Jung</span></li>
-                            <li><span class="fighters">Alexa Grasso vs. Felice Herrig</span></li>
-                            <li><span class="fighters">Abel Trujillo vs. James Vick</span></li>
-                            <li><span class="fighters">Ovince Saint Preux vs. Volkan Oezdemir</span></li>
-                            <li><span class="fighters">Anthony Hamilton vs. Marcel Fortuna</span></li>
-                            <li><span class="fighters">Angela Hill vs. Jessica Andrade</span></li>
+                            <li><span class="fighters">Holly Holm vs. Germaine de Randamie</span></li>
+                            <li><span class="fighters">Derek Brunson vs. Anderson Silva</span></li>
+                            <li><span class="fighters">Tim Boetsch vs. Ronaldo Souza</span></li>
+                            <li><span class="fighters">Jared Cannonier vs. Glover Teixeira</span></li>
+                            <li><span class="fighters">Jim Miller vs. Duston Poirier</span></li>
                         </ul>
                     </div>
                     <div class="undercard fight-list">
                         <h3>UNDER CARD</h3>
                         <ul class="fight-listing">
-                            <li><span class="fighters">Curtis Blaydes vs. Adam Milstead</span></li>
-                            <li><span class="fighters">Chris Greutzemacher vs. Chas Skelly</span></li>
-                            <li><span class="fighters">Ricardo Lucas Ramos vs. Michinori Tanaka</span></li>
-                            <li><span class="fighters">Bec Rawlings vs. Tecia Torres</span></li>
-                            <li><span class="fighters">Alex Morano vs. Niko Price</span></li>
-                            <li><span class="fighters">Daniel Jolly vs. Khalil Rountree</span></li>
+                            <li><span class="fighters">Randy Brown vs. Belal Muhammad</span></li>
+                            <li><span class="fighters">Wilson Reis vs. Ulka Sasaki</span></li>
+                            <li><span class="fighters">Nik Lentz vs. Islam Makhachev</span></li>
+                            <li><span class="fighters">Jarred Brooks vs. Ian McCall</span></li>
                         </ul>
                     </div>
                 </div>
