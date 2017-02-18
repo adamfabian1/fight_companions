@@ -15,7 +15,7 @@ $instagramImage = img('../media/images/instagram-logo.png', false, array('class'
             <ul class="social-links-list">
                 <li class="social-links-item"><?php echo anchor_popup('https://www.facebook.com/fcompanions', $facebookImage, array('class' => 'facebook-social', 'target'=>"_blank")); ?></li>
                 <li class="social-links-item"><?php echo anchor_popup('https://twitter.com/Fight_companion/', $twitterImage, array('class' => 'twitter-social')); ?></li>
-                <li class="social-links-item"><?php echo anchor_popup('http://www.youtube.com/tektres', $youtubeImage, array('class' => 'youtube-social')); ?></li>
+                <li class="social-links-item"><?php echo anchor_popup('https://www.youtube.com/channel/UC3wBEVQVbR0wJprAIVL_xfw', $youtubeImage, array('class' => 'youtube-social')); ?></li>
                 <li class="social-links-item"><?php echo anchor_popup('https://www.instagram.com/fightcompanions/', $instagramImage, array('class' => 'youtube-social')); ?></li>
             </ul>
         </div>

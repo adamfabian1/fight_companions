@@ -8,7 +8,7 @@
                         <span>UFC 208: HOLM VS. RADAMIE<br/>February 11th, 2017</span>
                     </h3>
                     <div class="video-container">
-                        <iframe width="100%" src="https://www.youtube.com/embed/FhdoNyDVHUc" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                        <iframe width="853" height="480" src="https://www.youtube.com/embed/FhdoNyDVHUc" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                     </div>
                     <div class="main-event fight-list">
                         <h3>MAIN CARD</h3>
