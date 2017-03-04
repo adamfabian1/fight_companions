@@ -15,7 +15,7 @@ $instagramImage = img('../media/images/instagram-logo.png', false, array('class'
             <ul class="social-links-list">
                 <li class="social-links-item"><?php echo anchor_popup('https://www.facebook.com/fcompanions', $facebookImage, array('class' => 'facebook-social', 'target'=>"_blank")); ?></li>
                 <li class="social-links-item"><?php echo anchor_popup('https://twitter.com/Fight_companion/', $twitterImage, array('class' => 'twitter-social')); ?></li>
-                <li class="social-links-item"><?php echo anchor_popup('http://www.youtube.com/tektres', $youtubeImage, array('class' => 'youtube-social')); ?></li>
+                <li class="social-links-item"><?php echo anchor_popup('https://www.youtube.com/channel/UC3wBEVQVbR0wJprAIVL_xfw', $youtubeImage, array('class' => 'youtube-social')); ?></li>
                 <li class="social-links-item"><?php echo anchor_popup('https://www.instagram.com/fightcompanions/', $instagramImage, array('class' => 'youtube-social')); ?></li>
             </ul>
         </div>
@@ -139,18 +139,14 @@ $instagramImage = img('../media/images/instagram-logo.png', false, array('class'
                 url: "<?php echo base_url(); ?>welcome/feedbackForm",
                 data: {
                     email: email,
-                    twitter: twitter,
-                    facebook: facebook,
                     firstname: firstname,
                     lastname: lastname,
-                    comment: comment,
-                    instagram: instagram
+                    comment: comment
                 },
                 success: function (data) {
                     try {
                         if (data) {
                             var obj = jQuery.parseJSON(data);
-                            console.log(obj);
                             if (obj['ERROR_ARRAY']) {
                                 parseErrors(obj['ERROR_ARRAY'], 'feedback-form');
                             }
