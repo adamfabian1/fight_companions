@@ -193,12 +193,15 @@ textarea:focus, input:focus {
     padding:5px;
 }
 .fight-predictions{
-    width:100%;
+    width: 45%;
+    margin: 0 auto;
     text-align:center;
 }
 .fight-predictions h3{
     font-size:22px;
-    margin-bottom:5px;
+    background-color: #808080;
+    margin-bottom: 0;
+    padding: 10px;
 }
 .fight-predictions ul{
     margin-bottom:10px;
@@ -208,6 +211,9 @@ textarea:focus, input:focus {
 }
 .fight-predictions li{
     float:none;
+}
+.panel-gif{
+	margin-top: 15px;
 }
 body #simplemodal-container{
     color:white;
@@ -410,6 +416,17 @@ ul.social-links-list li{
     margin-bottom:30px;
     float:left;
     width:100%;
+}
+.fight-red{
+	background-color: red;
+	padding: 5px;
+}.fight-black{
+	background-color: #000000;
+	padding: 2px;
+}
+.fight-grey{
+	background-color: #808080;
+	padding: 2px;
 }
 #fight-headline{
     font-size:30px;

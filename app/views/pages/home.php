@@ -31,32 +31,32 @@
                     <div class="fight-predictions">
                         <h3>UFC 209 Fight Predictions</h3>
                         <ul>
-                            <li>Adam's Predictions</li>
-                            <li>Alistair Overeem by KO in Round 1</li>
-                            <li>Lando Vannata by SUB in Round 2</li>
-                            <li>Rashad Evans by KO in Round 2</li>
-                            <li>Stephen Thompson by KO in Round 3 (BONUS: Headkick)</li>
+                            <li class="fight-red">Adam's Predictions</li>
+                            <li class="fight-black">Alistair Overeem by KO in Round 1</li>
+                            <li class="fight-black">Lando Vannata by SUB in Round 2</li>
+                            <li class="fight-grey">Rashad Evans by KO in Round 2</li>
+                            <li class="fight-black">Stephen Thompson by KO in Round 3 (BONUS: Headkick)</li>
                         </ul>
                         <ul>
-                            <li>Anthony's Predictions</li>
-                            <li>Alistair Overeem by KO in Round 2</li>
-                            <li>Lando Vannata by SUB in Round 2</li>
-                            <li>Rashad Evans by TKO in Round 3</li>
-                            <li>Stephen Thompson by TKO in Round 3 (BONUS: Headkick)</li>
+                            <li class="fight-red">Anthony's Predictions</li>
+                            <li class="fight-black">Alistair Overeem by KO in Round 2</li>
+                            <li class="fight-black">Lando Vannata by SUB in Round 2</li>
+                            <li class="fight-grey">Rashad Evans by TKO in Round 3</li>
+                            <li class="fight-black">Stephen Thompson by TKO in Round 3 (BONUS: Headkick)</li>
                         </ul>
                         <ul>
-                            <li>Hector's Predictions</li>
-                            <li>Mark Hunt by KO in Round 3</li>
-                            <li>Lando Vannata by DEC (UD)</li>
-                            <li>Rashad Evans by DEC (UD)</li>
-                            <li>Tyron Woodley by TKO in Round 3</li>
+                            <li class="fight-red">Hector's Predictions</li>
+                            <li class="fight-black">Mark Hunt by KO in Round 3</li>
+                            <li class="fight-black">Lando Vannata by DEC (UD)</li>
+                            <li class="fight-grey">Rashad Evans by DEC (UD)</li>
+                            <li class="fight-black">Tyron Woodley by TKO in Round 3</li>
                         </ul>
                         <ul>
-                            <li>Senko's Predictions</li>
-                            <li>Alistair Overeem by DEC (UD)</li>
-                            <li>Lando Vannata by DEC (UD)</li>
-                            <li>Rashad Evans by KO in Round 2</li>
-                            <li>Tyron Woodley by KO in Round 2 (BONUS: Hammerfist)</li>
+                            <li class="fight-red">Senko's Predictions</li>
+                            <li class="fight-black">Alistair Overeem by DEC (UD)</li>
+                            <li class="fight-grey">Lando Vannata by DEC (UD)</li>
+                            <li class="fight-black">Rashad Evans by KO in Round 2</li>
+                            <li class="fight-black">Tyron Woodley by KO in Round 2 (BONUS: Hammerfist)</li>
                         </ul>
                     </div>
                 </div>
@@ -124,6 +124,7 @@
                         <div id="contactform-response" class="display:none">
                         </div>
                     </div>
+					<div class="panel-gif"><img src="../media/images/intro-loop-xs.gif" width="200"/></div>
                 </div>
                 <script type="text/javascript">
                     jQuery(document).ready(function(){
