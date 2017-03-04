@@ -31,32 +31,32 @@
                     <div class="fight-predictions">
                         <h3>UFC 209 Fight Predictions</h3>
                         <ul>
-                            <li>Anthony's Predictions</li>
-                            <li>Alistair Overeem by Knockout in Round 2</li>
-                            <li>Lando Vannata by Submission in Round 2</li>
-                            <li>Rashad Evans by Technical Knockout in Round 3</li>
-                            <li>Stephen Thompson by Technical Knockout in Round 3 (BONUS: Headkick)</li>
+                            <li>Adam's Predictions</li>
+                            <li>Alistair Overeem by KO in Round 1</li>
+                            <li>Lando Vannata by SUB in Round 2</li>
+                            <li>Rashad Evans by KO in Round 2</li>
+                            <li>Stephen Thompson by KO in Round 3 (BONUS: Headkick)</li>
                         </ul>
                         <ul>
-                            <li>Senko's Predictions</li>
-                            <li>Alistair Overeem by Unanimous Decision</li>
-                            <li>Lando Vannata by Unanimous Decision</li>
-                            <li>Rashad Evans by Knockout in Round 2</li>
-                            <li>Tyron Woodley by Knockout in Round 2 (BONUS: Hammerfist)</li>
+                            <li>Anthony's Predictions</li>
+                            <li>Alistair Overeem by KO in Round 2</li>
+                            <li>Lando Vannata by SUB in Round 2</li>
+                            <li>Rashad Evans by TKO in Round 3</li>
+                            <li>Stephen Thompson by TKO in Round 3 (BONUS: Headkick)</li>
                         </ul>
                         <ul>
                             <li>Hector's Predictions</li>
-                            <li>Mark Hunt by Knockout in Round 3</li>
-                            <li>Lando Vannata by Unanimous Decision</li>
-                            <li>Rashad Evans by Unanimous Decision</li>
-                            <li>Tyron Woodley by Technical Knockout in Round 3</li>
+                            <li>Mark Hunt by KO in Round 3</li>
+                            <li>Lando Vannata by DEC (UD)</li>
+                            <li>Rashad Evans by DEC (UD)</li>
+                            <li>Tyron Woodley by TKO in Round 3</li>
                         </ul>
                         <ul>
-                            <li>Adam's Predictions</li>
-                            <li>Alistair Overeem by Knockout in Round 1</li>
-                            <li>Lando Vannata by Submission in Round 2</li>
-                            <li>Rashad Evans by Knockout in Round 2</li>
-                            <li>Stephen Thompson by Knockout in Round 3 (BONUS: Headkick)</li>
+                            <li>Senko's Predictions</li>
+                            <li>Alistair Overeem by DEC (UD)</li>
+                            <li>Lando Vannata by DEC (UD)</li>
+                            <li>Rashad Evans by KO in Round 2</li>
+                            <li>Tyron Woodley by KO in Round 2 (BONUS: Hammerfist)</li>
                         </ul>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
 
 
 
-                <div class="panel panel-default">
+                <div class="panel panel-default email-subscribe">
                     <div class="panel-heading">
                         <h3 class="panel-title">Subscribe to find out when Fight Companions Goes Live!!</h3>
                         <span class="panel-subtitle">Sign up with your email address to receive news and updates.</span>
@@ -125,6 +125,11 @@
                         </div>
                     </div>
                 </div>
+                <script type="text/javascript">
+                    jQuery(document).ready(function(){
+                        jQuery('.email-subscribe').modal();
+                    });
+                </script>
             </div>
         </div>
     </div>

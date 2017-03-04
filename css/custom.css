@@ -8,7 +8,7 @@ body{
     text-transform:uppercase;
 }
 body .std{
-    font-family: 'Cinzel', serif;
+    font-family: 'Cabin', serif;
 }
 h1,h2,h3,h4,h5,h6{
     font-weight:bold;
@@ -402,6 +402,9 @@ ul.social-links-list li{
 }
 .fight-list h3{
     font-size:22px;
+    background-color: red;
+    padding: 10px;
+    margin-bottom: initial;
 }
 .fight-card{
     margin-bottom:30px;

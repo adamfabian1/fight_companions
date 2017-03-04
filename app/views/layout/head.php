@@ -8,14 +8,13 @@
 
     <link rel="shortcut icon" href="<?php echo base_url(); ?>media/images/favicon-32x32.png" type="image/x-icon">
 
-    <link href="https://fonts.googleapis.com/css?family=Cinzel:700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/custom.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/basic.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/jquery.tabSlideOut.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/responsive.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/owl-carousel/owl.theme.default.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Krona+One" rel="stylesheet">
     <script type='text/javascript' src="<?php echo base_url(); ?>js/jquery.js"></script>
     <script type='text/javascript' src="<?php echo base_url(); ?>js/jquery.tabSlideOut.js"></script>
     <script type='text/javascript' src="<?php echo base_url(); ?>js/jquery.simplemodal.js"></script>
