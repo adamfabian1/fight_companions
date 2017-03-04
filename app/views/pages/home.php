@@ -1,36 +1,107 @@
 <div class="main">
     <div class="main-wrapper">
-        <div class="page-title"></div>
         <div class="content">
             <div class="std">
-                <div class="fight-card">
+                <div class="content-center fight-card">
                     <h3 id="fight-headline">
-                        <span>UFC FIGHT NIGHT: BERMUDEZ VS. KOREAN ZOMBIE<br/>February 4th, 2017</span>
+                        <span>UFC 209: Woodley vs. Thompson<br/>March 4th, 2017</span>
                     </h3>
+                    <div class="video-container">
+                        <iframe width="853" height="480" src="https://www.youtube.com/embed/jALd7qIPf-E" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                    </div>
                     <div class="main-event fight-list">
                         <h3>MAIN CARD</h3>
                         <ul class="fight-listing">
-                            <li><span class="fighters">Dennis Bermudez vs. Chan Sung Jung</span></li>
-                            <li><span class="fighters">Alexa Grasso vs. Felice Herrig</span></li>
-                            <li><span class="fighters">Abel Trujillo vs. James Vick</span></li>
-                            <li><span class="fighters">Ovince Saint Preux vs. Volkan Oezdemir</span></li>
-                            <li><span class="fighters">Anthony Hamilton vs. Marcel Fortuna</span></li>
-                            <li><span class="fighters">Angela Hill vs. Jessica Andrade</span></li>
+                            <li><span class="fighters">Tyron Woodley vs. Stephen Thompson</span></li>
+                            <li><span class="fighters">Rashad Evans vs. Daniel Kelly</span></li>
+                            <li><span class="fighters">Devid Teymur vs. Lando Vannata</span></li>
+                            <li><span class="fighters">Amanda Cooper vs. Cynthia Calvillo</span></li>
+                            <li><span class="fighters">Mark Hunt vs. Alistair Overeem</span></li>
                         </ul>
                     </div>
                     <div class="undercard fight-list">
                         <h3>UNDER CARD</h3>
                         <ul class="fight-listing">
-                            <li><span class="fighters">Curtis Blaydes vs. Adam Milstead</span></li>
-                            <li><span class="fighters">Chris Greutzemacher vs. Chas Skelly</span></li>
-                            <li><span class="fighters">Ricardo Lucas Ramos vs. Michinori Tanaka</span></li>
-                            <li><span class="fighters">Bec Rawlings vs. Tecia Torres</span></li>
-                            <li><span class="fighters">Alex Morano vs. Niko Price</span></li>
-                            <li><span class="fighters">Daniel Jolly vs. Khalil Rountree</span></li>
+                            <li><span class="fighters">Luis Henrique vs. Marcin Tybura</span></li>
+                            <li><span class="fighters">Mirsad Bektic vs. Darren Elkins</span></li>
+                            <li><span class="fighters">Irui Alcantara vs. Luke Sanders</span></li>
+                            <li><span class="fighters">Mark Godbeer vs. Daniel Spitz</span></li>
+                        </ul>
+                    </div>
+                    <div class="fight-predictions">
+                        <h3>UFC 209 Fight Predictions</h3>
+                        <ul>
+                            <li class="fight-red">Adam's Predictions</li>
+                            <li class="fight-black">Alistair Overeem by KO in Round 1</li>
+                            <li class="fight-black">Lando Vannata by SUB in Round 2</li>
+                            <li class="fight-grey">Rashad Evans by KO in Round 2</li>
+                            <li class="fight-black">Stephen Thompson by KO in Round 3 (BONUS: Headkick)</li>
+                        </ul>
+                        <ul>
+                            <li class="fight-red">Anthony's Predictions</li>
+                            <li class="fight-black">Alistair Overeem by KO in Round 2</li>
+                            <li class="fight-black">Lando Vannata by SUB in Round 2</li>
+                            <li class="fight-grey">Rashad Evans by TKO in Round 3</li>
+                            <li class="fight-black">Stephen Thompson by TKO in Round 3 (BONUS: Headkick)</li>
+                        </ul>
+                        <ul>
+                            <li class="fight-red">Hector's Predictions</li>
+                            <li class="fight-black">Mark Hunt by KO in Round 3</li>
+                            <li class="fight-black">Lando Vannata by DEC (UD)</li>
+                            <li class="fight-grey">Rashad Evans by DEC (UD)</li>
+                            <li class="fight-black">Tyron Woodley by TKO in Round 3</li>
+                        </ul>
+                        <ul>
+                            <li class="fight-red">Senko's Predictions</li>
+                            <li class="fight-black">Alistair Overeem by DEC (UD)</li>
+                            <li class="fight-grey">Lando Vannata by DEC (UD)</li>
+                            <li class="fight-black">Rashad Evans by KO in Round 2</li>
+                            <li class="fight-black">Tyron Woodley by KO in Round 2 (BONUS: Hammerfist)</li>
                         </ul>
                     </div>
                 </div>
-                <div class="panel panel-default">
+                <div class="rankings">
+                    <a class="handle">FC Standings</a>
+                    <div class="rankings-panel">
+                        <h3>FightCompanions Rivalry Rankings</h3>
+                        <p>Each week, the companions will choose winners for a fight card.  Points are awarded for choosing the winner, decision type, and winning combination.</p>
+                        <table class="rankings-table">
+                            <tr>
+                                <th>Companion</th>
+                                <th>Score</th>
+                            </tr>
+                            <tr>
+                                <td>Anthony</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Hector</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Senko</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Adam</td>
+                                <td>0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $(window).on("load", function() {
+                        $('.rankings').tabSlideOut({
+                            tabLocation: 'right',
+                            offset: '15%',
+                            offsetReverse: true
+                        });
+                    });
+                </script>
+
+
+
+                <div class="panel panel-default email-subscribe">
                     <div class="panel-heading">
                         <h3 class="panel-title">Subscribe to find out when Fight Companions Goes Live!!</h3>
                         <span class="panel-subtitle">Sign up with your email address to receive news and updates.</span>
@@ -53,7 +124,13 @@
                         <div id="contactform-response" class="display:none">
                         </div>
                     </div>
+					<div class="panel-gif"><img src="../media/images/intro-loop-xs.gif" width="200"/></div>
                 </div>
+                <script type="text/javascript">
+                    jQuery(document).ready(function(){
+                        jQuery('.email-subscribe').modal();
+                    });
+                </script>
             </div>
         </div>
     </div>
