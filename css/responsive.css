@@ -67,6 +67,10 @@
 }
 /* Responsive Styling Mobile */
 @media only screen and (max-width:768px){
+    body #simplemodal-container{
+        max-width:300px;
+        min-height:440px;
+    }
     .main-wrapper{
         margin-bottom: 25%;
     }

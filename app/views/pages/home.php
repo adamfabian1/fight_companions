@@ -128,7 +128,11 @@
                 </div>
                 <script type="text/javascript">
                     jQuery(document).ready(function(){
-                        jQuery('.email-subscribe').modal();
+                        jQuery('.email-subscribe').modal({
+                            onShow: function (dialog) {
+                                jQuery(this).addClass('email-subscribe');
+                            }
+                        });
                     });
                 </script>
             </div>
