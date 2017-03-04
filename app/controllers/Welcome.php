@@ -162,15 +162,12 @@ class Welcome extends My_Controller
         if (!$this->email->send()) {
             // Raise error message
             show_error($this->email->print_debugger());
-        } else {
-            // Show success notification or other things here
-//            echo 'Success to send email';
         }
+        $this->sendSignupToCompanions($email);
     }
 
     public function sendContactEmail($from, $firstName, $lastName, $comment, $twitter = null, $facebook = null, $instagram = null)
     {
-
         $emailConfig = [
             'protocol' => 'smtp',
             'smtp_host' => 'ssl://smtp.gmail.com',
@@ -215,6 +212,40 @@ class Welcome extends My_Controller
             return false;
         } else {
             return true;
+        }
+    }
+
+    public function sendSignupToCompanions($signupEmail){
+        $emailConfig = [
+            'protocol' => 'smtp',
+            'smtp_host' => 'ssl://smtp.gmail.com',
+            'smtp_port' => 465,
+            'smtp_user' => 'info@fightcompanions.com',
+            'smtp_pass' => 'Chalupa5!',
+            'mailtype' => 'html',
+            'charset' => 'iso-8859-1'
+        ];
+
+        $from = [
+            'email' => 'info@fightcompanions.com',
+            'name' => "Fight Companions"
+        ];
+
+        $subject = 'Welcome to Fight Companions';
+        $message = $signupEmail. ' signed up';
+        $to = array('info@fightcompanions.com');
+        $this->load->library('email', $emailConfig);
+        // Sometimes you have to set the new line character for better result
+        $this->email->set_newline("\r\n");
+        // Set email preferences
+        $this->email->from($from['email'], $from['name']);
+        $this->email->to($to);
+        $this->email->subject($subject);
+        $this->email->message($message);
+        // Ready to send email and check whether the email was successfully sent
+        if (!$this->email->send()) {
+            // Raise error message
+            show_error($this->email->print_debugger());
         }
     }
 }
