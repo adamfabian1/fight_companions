@@ -7,7 +7,7 @@
                         <span>UFC 209: Woodley vs. Thompson<br/>March 4th, 2017</span>
                     </h3>
                     <div class="video-container">
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/jALd7qIPf-E" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                        <iframe width="853" height="480" src="https://www.youtube.com/embed/jm9dL-_LCkY" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                     </div>
                     <div class="main-event fight-list">
                         <h3>MAIN CARD</h3>
@@ -54,8 +54,8 @@
                         <ul>
                             <li class="fight-red">Senko's Predictions</li>
                             <li class="fight-black">Alistair Overeem by DEC (UD)</li>
-                            <li class="fight-grey">Lando Vannata by DEC (UD)</li>
-                            <li class="fight-black">Rashad Evans by KO in Round 2</li>
+                            <li class="fight-black">Lando Vannata by DEC (UD)</li>
+                            <li class="fight-grey">Rashad Evans by KO in Round 2</li>
                             <li class="fight-black">Tyron Woodley by KO in Round 2 (BONUS: Hammerfist)</li>
                         </ul>
                     </div>
@@ -67,31 +67,41 @@
                         <p>Each week, the companions will choose winners for a fight card.  Points are awarded for choosing the winner, decision type, and winning combination.</p>
                         <table class="rankings-table">
                             <tr>
+                                <th></th>
                                 <th>Companion</th>
                                 <th>Score</th>
                             </tr>
                             <tr>
+                                <td>1</td>
+                                <td>Guest (Sean)</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>T-2</td>
                                 <td>Anthony</td>
-                                <td>0</td>
+                                <td>4</td>
                             </tr>
                             <tr>
-                                <td>Hector</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td>Senko</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
+                                <td>T-2</td>
                                 <td>Adam</td>
-                                <td>0</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Senko</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Last</td>
+                                <td>Hector</td>
+                                <td>2</td>
                             </tr>
                         </table>
                     </div>
                 </div>
                 <script type="text/javascript">
-                    $(window).on("load", function() {
-                        $('.rankings').tabSlideOut({
+                    jQuery(document).ready(function() {
+                        jQuery('.rankings').tabSlideOut({
                             tabLocation: 'right',
                             offset: '15%',
                             offsetReverse: true
@@ -128,11 +138,7 @@
                 </div>
                 <script type="text/javascript">
                     jQuery(document).ready(function(){
-                        jQuery('.email-subscribe').modal({
-                            onShow: function (dialog) {
-                                jQuery(this).addClass('email-subscribe');
-                            }
-                        });
+                        jQuery('.email-subscribe').modal();
                     });
                 </script>
             </div>

@@ -193,7 +193,6 @@ textarea:focus, input:focus {
     padding:5px;
 }
 .fight-predictions{
-    width: 45%;
     margin: 0 auto;
     text-align:center;
 }
@@ -461,4 +460,10 @@ ul.social-links-list li{
     left: 0;
     width: 100%;
     height: 100%;
+}
+.email-subscribe .panel-gif{
+    display:none;
+}
+#simplemodal-container .email-subscribe .panel-gif{
+    display:block;
 }
