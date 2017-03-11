@@ -4,7 +4,7 @@
             <div class="std">
                 <div class="content-center fight-card">
                     <h3 id="fight-headline">
-                        <span>UFC 209: Woodley vs. Thompson<br/>March 4th, 2017</span>
+                        <span>UFC Fight Night: Belfort vs. Gastelum<br/>March 11th, 2017</span>
                     </h3>
                     <div class="video-container">
                         <iframe width="853" height="480" src="https://www.youtube.com/embed/jm9dL-_LCkY" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
@@ -12,51 +12,58 @@
                     <div class="main-event fight-list">
                         <h3>MAIN CARD</h3>
                         <ul class="fight-listing">
-                            <li><span class="fighters">Tyron Woodley vs. Stephen Thompson</span></li>
-                            <li><span class="fighters">Rashad Evans vs. Daniel Kelly</span></li>
-                            <li><span class="fighters">Devid Teymur vs. Lando Vannata</span></li>
-                            <li><span class="fighters">Amanda Cooper vs. Cynthia Calvillo</span></li>
-                            <li><span class="fighters">Mark Hunt vs. Alistair Overeem</span></li>
+                            <li><span class="fighters">Vitor Belfort vs. Kelvin Gastelum</span></li>
+                            <li><span class="fighters">Maurício Rua vs. Gian Villante</span></li>
+                            <li><span class="fighters">Edson Barboza vs. Beneil Dariush</span></li>
+                            <li><span class="fighters">Jussier Formiga vs. Ray Borg</span></li>
+                            <li><span class="fighters">Bethe Correia vs. Marion Reneau</span></li>
+                            <li><span class="fighters">Alex Oliveira vs. Tim Means</span></li>
                         </ul>
                     </div>
                     <div class="undercard fight-list">
                         <h3>UNDER CARD</h3>
                         <ul class="fight-listing">
-                            <li><span class="fighters">Luis Henrique vs. Marcin Tybura</span></li>
-                            <li><span class="fighters">Mirsad Bektic vs. Darren Elkins</span></li>
-                            <li><span class="fighters">Irui Alcantara vs. Luke Sanders</span></li>
-                            <li><span class="fighters">Mark Godbeer vs. Daniel Spitz</span></li>
+                            <li><span class="fighters">Francisco Trinaldo vs. Kevin Lee</span></li>
+                            <li><span class="fighters">Sérgio Moraes vs. Davi Ramos</span></li>
+                            <li><span class="fighters">Rani Yahya vs. Joe Soto</span></li>
+                            <li><span class="fighters">Michel Prazeres vs. Josh Burkman</span></li>
                         </ul>
                     </div>
                     <div class="fight-predictions">
-                        <h3>UFC 209 Fight Predictions</h3>
+                        <h3>UFC Fight Night 106 Predictions</h3>
                         <ul>
                             <li class="fight-red">Adam's Predictions</li>
-                            <li class="fight-black">Alistair Overeem by KO in Round 1</li>
-                            <li class="fight-black">Lando Vannata by SUB in Round 2</li>
-                            <li class="fight-grey">Rashad Evans by KO in Round 2</li>
-                            <li class="fight-black">Stephen Thompson by KO in Round 3 (BONUS: Headkick)</li>
+                            <li class="fight-black">Kelvin Gastelum by TKO in Round 2</li>
+                            <li class="fight-grey">Maurício Rua by DEC</li>
+                            <li class="fight-black">Edson Barboza by DEC</li>
+                            <li class="fight-grey">Ray Borg by SUB in Round 3 (Guillotine)</li>
+                            <li class="fight-black">Bethe Correia by Decision</li>
+                            <li class="fight-grey">Tim Means by TKO Round 3</li>
                         </ul>
                         <ul>
                             <li class="fight-red">Anthony's Predictions</li>
-                            <li class="fight-black">Alistair Overeem by KO in Round 2</li>
-                            <li class="fight-black">Lando Vannata by SUB in Round 2</li>
-                            <li class="fight-grey">Rashad Evans by TKO in Round 3</li>
-                            <li class="fight-black">Stephen Thompson by TKO in Round 3 (BONUS: Headkick)</li>
+                            <li class="fight-black">Kelvin Gastelum by TKO in Round 2</li>
+                            <li class="fight-grey">Maurício Rua by DEC</li>
+                            <li class="fight-black">Edson Barboza by DEC</li>
+                            <li class="fight-grey">Ray Borg by DEC</li>
+                            <li class="fight-black">Bethe Correia by TKO Round 1</li>
+                            <li class="fight-grey">Tim Means by TKO Round 3</li>
                         </ul>
                         <ul>
                             <li class="fight-red">Hector's Predictions</li>
-                            <li class="fight-black">Mark Hunt by KO in Round 3</li>
-                            <li class="fight-black">Lando Vannata by DEC (UD)</li>
-                            <li class="fight-grey">Rashad Evans by DEC (UD)</li>
-                            <li class="fight-black">Tyron Woodley by TKO in Round 3</li>
+                            <li class="fight-black">Kelvin Gastelum by TKO in Round 3</li>
+                            <li class="fight-grey">Gian Villante by DEC</li>
+                            <li class="fight-black">Beneli Dariush by DEC</li>
+                            <li class="fight-grey">Ray Borg by DEC</li>
+                            <li class="fight-black">Bethe Correia by TKO Round 2</li>
+                            <li class="fight-grey">Tim Means by TKO Round 3</li>
                         </ul>
                         <ul>
                             <li class="fight-red">Senko's Predictions</li>
-                            <li class="fight-black">Alistair Overeem by DEC (UD)</li>
+                            <!--<li class="fight-black">Alistair Overeem by DEC (UD)</li>
                             <li class="fight-black">Lando Vannata by DEC (UD)</li>
                             <li class="fight-grey">Rashad Evans by KO in Round 2</li>
-                            <li class="fight-black">Tyron Woodley by KO in Round 2 (BONUS: Hammerfist)</li>
+                            <li class="fight-black">Tyron Woodley by KO in Round 2 (BONUS: Hammerfist)</li>-->
                         </ul>
                     </div>
                 </div>
