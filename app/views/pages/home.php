@@ -60,10 +60,12 @@
                         </ul>
                         <ul>
                             <li class="fight-red">Senko's Predictions</li>
-                            <!--<li class="fight-black">Alistair Overeem by DEC (UD)</li>
-                            <li class="fight-black">Lando Vannata by DEC (UD)</li>
-                            <li class="fight-grey">Rashad Evans by KO in Round 2</li>
-                            <li class="fight-black">Tyron Woodley by KO in Round 2 (BONUS: Hammerfist)</li>-->
+                            <li class="fight-black">Kelvin Gastelum by KO in Round 2 (punch)</li>
+                            <li class="fight-grey">Maurício Rua by KO (head kick)</li>
+                            <li class="fight-black">Edson Barboza by DEC</li>
+                            <li class="fight-grey">Ray Borg by DEC</li>
+                            <li class="fight-black">Bethe Correia by KO Round 3 (punch)</li>
+                            <li class="fight-grey">Alex Oliveira by DEC</li>
                         </ul>
                     </div>
                 </div>
