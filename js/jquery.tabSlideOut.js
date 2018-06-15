@@ -42,6 +42,7 @@
     Add the class ui-slideouttab-handle-rounded to handles to give them 
     rounded outer corners.
 */
+$.noConflict();
 (function($){
     $.fn.tabSlideOut = function(callerSettings) {
 

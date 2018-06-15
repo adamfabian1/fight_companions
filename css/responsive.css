@@ -3,6 +3,9 @@
     .mobile-nav{
         display:none;
     }
+    .fight-predictions{
+        width: 45%;
+    }
     .nav-wrapper{
         border-bottom:1px solid red;
     }
@@ -67,8 +70,15 @@
 }
 /* Responsive Styling Mobile */
 @media only screen and (max-width:768px){
+    .fight-predictions{
+        width: 100%;
+    }
+    body #simplemodal-container{
+        max-width:300px;
+        min-height:440px;
+    }
     .main-wrapper{
-        margin-bottom: 25%;
+        margin-bottom: 15px;
     }
     .header-left{
         display:none;
@@ -183,6 +193,7 @@
     }
     .footer{
         position:relative;
+        float:left;
     }
     .footer-menu-item{
         float:none;
