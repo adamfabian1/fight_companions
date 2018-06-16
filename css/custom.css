@@ -53,7 +53,6 @@ ul li{
     min-height:100%;
     width:100%;
     background-image: url('../media/images/main-bg.jpg');
-    position:absolute;
     background-size:100%;
     background-attachment:fixed;
     background-position:center center;
